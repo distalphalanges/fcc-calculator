@@ -1,8 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
 table {
-	width: 300px;
-	margin: 5% auto;
-	border-collapse: collapse;
-	border-spacing: 0;
+    width: 300px;
+    margin: 20px auto;
+    border-spacing: 4px;
+    padding: 16px;
+    border-radius: 15px;
+    background-color: #889362;
 }
 
 td {
@@ -11,29 +17,87 @@ td {
 }
 
 button {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-	font-size: 20px;
-	box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    color: #FFF;
+    font-size: 28px;
+    font-family: 'Jura';
+    font-weight: bold;
+    border: 3px solid #a0be74;
+    border-radius: 3px;
+    border-right: none;
+    border-top: none;
+    background-color: #c5dca3;
+}
+
+button:active {
+    background-color: #abc48d;
+    border: 3px solid #8fac6c;
+    border-left: none;
+    border-bottom: none;
+    position: relative;
+    color: #fcf3f3;
+}
+
+.special {
+    background-color: #F44336;
+    border-color: #da190b;
+    font-size: 18px;
+}
+
+.special:active {
+    background-color: #df2d20;
+    border-color: #ce1103;
+}
+
+.operation, #equals, #decimalPoint {
+	background-color: #f3df72;
+    border-color: #e6c60f;
+}
+
+.operation:active {
+    background-color: #efd543;
+    border-color: #e6c60f;
 }
 
 input {
-	border: 0;
-	padding: 0 4px;
 	width: 100%;
-	box-sizing: border-box;
+	background: none;
+	padding: 0 4px;
+	border: 0;
 	text-align: right;
 }
 
+#screen {
+    background-color: #aacc66;
+    border: 5px solid #8fb83d;
+    border-left: 2px;
+    border-bottom: 2px;
+}
+
+#entry, #memory {
+    color: #5a810e;
+    font-family: 'Digital 7', monospace;
+    letter-spacing: 4px;
+}
+
 #entry {
-	border: 1px solid #CCC;
-	font-size: 32px;
-	height: 50px;
+	height: 36px;
+    font-size: 48px;
 }
 
 #memory {
-	color: #777;
-	margin: 4px 0;
-	font-size: 16px;
+	font-size: 21px;
+}
+
+@font-face {
+    font-family: 'Digital 7';
+    src: url('digital-7.ttf');
+}
+
+center {
+    color: #AAA;
+    font-family: monospace;
+    font-size: 14px;
 }
